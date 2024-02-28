@@ -8,13 +8,13 @@ Configurations of my windows host with a kali VM configured on its own.
 - Download the repo
 
 - Run inside the folder
-'''sh
+```ansible
 ansible-galaxy install -r requirements.yml
-'''
+```
 
 -  Add the IP address and credentials of your Windows machine into the inventory file ./inventory/hosts
 
 -  Run ansible-playbook main.yml inside this directory.
-  '''sh
+  ```ansible
 ansible-playbook main.yml
-'''
+```
