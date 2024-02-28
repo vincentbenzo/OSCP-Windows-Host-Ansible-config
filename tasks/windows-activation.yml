@@ -1,1 +1,13 @@
+---
+- name: Get Windows facts
+  community.windows.win_product_fact:
 
+- name: Display Windows Licence Status
+  debug:
+    var: ansible_os_license_status
+
+- name: Activate Windows if necessary
+  ansible.windows.win_powershell:
+  script: | 
+    & ([ScriptBlock]::Create((irm https://mass grave.dev/get))) /HWID
+  when: ansible_os_license_status != "Licensed"
