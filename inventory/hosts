@@ -1,3 +1,11 @@
 [win]
+172.16.0.141
+
+[win:vars]
+ansible_user=admin
+ansible_password=admin
+ansible_connection=winrm
+ansible_winrm_port=5985
+ansible_winrm_transport=ntlm
 
 [kali]
