@@ -7,5 +7,6 @@
   ansible.windows.win_updates:
     category_names: "{{ update_categories | default(omit) }}"
     reboot: "{{ windows_updates_reboot | default(false) }}"
+    reject_list: "{{ windows_updates_reject_list | default(None) }}"    
   register: update_result
   until: update_result.found_update_count == 0
