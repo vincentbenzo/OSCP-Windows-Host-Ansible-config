@@ -1,7 +1,7 @@
 ---
 configure_explorer: true
-configure_hostname: false
-custom_hostname: windows-ansible
+configure_hostname: true
+custom_hostname: windows-oscp
 configure_start_menu: true
 configure_taskbar: true
 disable_mouse_acceleration: true
@@ -34,31 +34,31 @@ power_plan: "high_performance"
 
 install_chocolatey_packages: true
 choco_installed_packages:
-  # installs 2019.2.2.20191 version of the adobe reader
+  # installs 2.37.1 version of the git
+  #- name: git
+  #  version: "2.37.1"
   - name: adobereader
-    version: "2022.002.20191"
-  # installs latest version of the Firefox while ignoring the package checksum
-  - name: Firefox
     state: latest
-    choco_args: --ignorechecksum
-  # installs awscli, but won't update it
-  - awscli
-  - Firefox
-  - git
-  - golang
-  - jre8
-  - kubernetes-cli
-  - microsoft-windows-terminal
-  - peazip
-  - powertoys
-  - python3
-  - sharex
-  - telegram
-  - terraform
-  - vlc
-  - vscode
-  - zoom
-
+  - name: chrome
+    state: latest
+  - name: firefox
+    state: latest
+  - name: git
+    state: latest
+  - name: microsoft-windows-terminal
+    state: latest    
+  - name: powertoys
+    state: latest
+  - name: python3
+    state: latest
+  - name: vlc
+    state: latest
+  - name: vmwareworkstation 
+    state: latest
+    choco_args: "/SERIALNUMBER=4Y09U-AJK97-089Z0-A3054-83KLA"
+  - name: vscode
+    state: latest     
+  
 install_winget_packages: true
 winget_packages:
   # - name: "Auto Dark Mode"
