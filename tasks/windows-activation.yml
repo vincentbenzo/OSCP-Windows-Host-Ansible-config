@@ -8,6 +8,6 @@
 
 - name: Activate Windows if necessary
   ansible.windows.win_powershell:
-  script: | 
-    & ([ScriptBlock]::Create((irm https://mass grave.dev/get))) /HWID
+    script: | 
+      & ([ScriptBlock]::Create((irm https://mass grave.dev/get))) /HWID
   when: ansible_os_license_status != "Licensed"
