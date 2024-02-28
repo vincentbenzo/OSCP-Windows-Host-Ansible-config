@@ -5,8 +5,7 @@ custom_hostname: windows-oscp
 configure_start_menu: true
 configure_taskbar: true
 disable_mouse_acceleration: true
-remote_desktop_enabled: true
-remove_desktop_icons: false
+remove_desktop_icons: true
 set_sound_scheme: true
 
 install_windows_updates: true
@@ -20,7 +19,7 @@ update_categories:
   # - Developer Kits
   # - Feature Packs
   - Security Updates
-  # - Service Packs
+  - Service Packs
   # - Tools
   - Update Rollups
   # - Updates
