@@ -2,7 +2,9 @@
 - name: Install Chocolatey packages.
   chocolatey.chocolatey.win_chocolatey:
     name: "{{ item.name | default(item) }}"
-    state: "present"
+    state: "{{ item.state | default('present') }}"
+    version: "{{ item.version | default(omit) }}"
+    choco_args: "{{ item.choco_args | default(omit) }}"
   loop: "{{ choco_installed_packages }}"
 
 - name: Clean chocolatey and nuget cache.
