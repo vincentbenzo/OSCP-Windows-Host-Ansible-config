@@ -43,7 +43,7 @@ choco_installed_packages:
     state: latest
   - name: bitwarden
     state: latest  
-  - name: chrome
+  - name: googlechrome
     state: latest
   - name: firefox
     state: latest
