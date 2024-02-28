@@ -55,13 +55,6 @@
     data: 1
     type: dword
 
-- name: Disable Ribbon menu in Windows Explorer.
-  ansible.windows.win_regedit:
-    path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Ribbon
-    name: MinimizedStateTabletModeOff
-    data: 1
-    type: dword
-
 - name: Enable Right-click Context Menu.
   ansible.windows.win_regedit:
     path: >
