@@ -1,6 +1,6 @@
 ---
 - name: Get Windows facts
-  community.windows.win_product_fact:
+  community.windows.win_product_facts:
 
 - name: Display Windows Licence Status
   debug:
