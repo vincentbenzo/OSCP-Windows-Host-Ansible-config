@@ -38,6 +38,8 @@ choco_installed_packages:
   #  version: "2.37.1"
   - name: adobereader
     state: latest
+  - name: bitwarden
+    state: latest  
   - name: chrome
     state: latest
   - name: firefox
