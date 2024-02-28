@@ -24,6 +24,9 @@ update_categories:
   - Update Rollups
   # - Updates
   # - Upgrades
+windows_updates_reject_list:
+# PB with this update 
+  - KB5034441
 
 change_power_plan: true
 # high_performance
