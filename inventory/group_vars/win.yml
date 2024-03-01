@@ -59,7 +59,7 @@ choco_installed_packages:
     state: latest
   - name: vmwareworkstation 
     state: latest
-    choco_args: '"/SERIALNUMBER=4Y09U-AJK97-089Z0-A3054-83KLA"'
+    package_params: "'/SERIALNUMBER=4A4RR-813DK-M81A9-4U35H-06KND'"
   - name: vscode
     state: latest     
   
